@@ -22,8 +22,8 @@ import androidx.compose.ui.unit.dp
 import com.example.learnkotlin.frontend.ui_elements.BlockedAppItem
 import com.example.learnkotlin.frontend.ui_elements.Checkbox
 import com.example.learnkotlin.frontend.ui_elements.InputField
-import com.example.learnkotlin.backend.data.BlockedApp
-import com.example.learnkotlin.backend.data.BlockedAppViewModel
+import com.example.learnkotlin.backend.database.blocked_app.BlockedApp
+import com.example.learnkotlin.backend.database.blocked_app.BlockedAppViewModel
 
 @Composable
 fun MainScreen(viewModel: BlockedAppViewModel) {

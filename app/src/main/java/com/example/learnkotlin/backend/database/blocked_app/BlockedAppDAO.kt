@@ -1,4 +1,4 @@
-package com.example.learnkotlin.backend.data
+package com.example.learnkotlin.backend.database.blocked_app
 
 import androidx.lifecycle.LiveData
 import androidx.room.Dao

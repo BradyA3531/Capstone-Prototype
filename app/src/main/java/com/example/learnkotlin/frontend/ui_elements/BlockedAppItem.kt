@@ -20,7 +20,7 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.example.learnkotlin.backend.data.BlockedApp
+import com.example.learnkotlin.backend.database.blocked_app.BlockedApp
 
 @Composable
 fun BlockedAppItem(
