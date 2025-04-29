@@ -12,6 +12,9 @@ interface BlockedAppDAO {
     @Query("SELECT * FROM blockedapp")
     fun getAll(): LiveData<List<BlockedApp>>
 
+    @Query("SELECT * FROM blockedapp")
+    suspend fun getAllNow(): List<BlockedApp>  // NEW: used in AccessibilityService
+
     @Insert
     suspend fun insert(blockedApp: BlockedApp)
 

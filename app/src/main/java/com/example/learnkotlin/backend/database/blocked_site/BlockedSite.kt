@@ -9,5 +9,6 @@ data class BlockedSite (
     @PrimaryKey(autoGenerate = true) val id:Int = 0,
     @ColumnInfo(name = "site_name") val siteName: String,
     @ColumnInfo(name = "url") val url: String,
-    @ColumnInfo(name = "is_blocked") var isBlocked: Boolean
+    @ColumnInfo(name = "is_blocked") var isBlocked: Boolean,
+    @ColumnInfo(name = "is_audited") var isAudited: Boolean
 )

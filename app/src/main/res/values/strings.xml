@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">LearnKotlin</string>
+    <string name="accessibility_service_description">Enable monitoring of browsing to audit.</string>
+    <string name="accessibility_description">Allow the blocking of apps</string>
 </resources>

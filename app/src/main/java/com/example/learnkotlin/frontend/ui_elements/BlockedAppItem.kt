@@ -55,7 +55,7 @@ fun BlockedAppItem(
                 color = Color.DarkGray
             )
             Row(
-                horizontalArrangement = Arrangement.SpaceBetween
+                horizontalArrangement = Arrangement.SpaceEvenly
             ){
                 Button(
                     onClick = onDelete,

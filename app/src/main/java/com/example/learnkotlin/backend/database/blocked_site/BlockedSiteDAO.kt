@@ -6,11 +6,18 @@ import androidx.room.Delete
 import androidx.room.Insert
 import androidx.room.Query
 import androidx.room.Update
+import com.example.learnkotlin.backend.database.audit_site.AuditSite
 
 @Dao
 interface BlockedSiteDAO {
     @Query("SELECT * FROM blockedsite")
     fun getAll(): LiveData<List<BlockedSite>>
+
+    @Query("SELECT * FROM blockedsite")
+    suspend fun getAllNow(): List<BlockedSite>
+
+    @Query("SELECT * FROM blockedsite WHERE id = :id")
+    suspend fun getById(id: Int): BlockedSite?
 
     @Insert
     suspend fun insert(blockedSite: BlockedSite)

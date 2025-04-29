@@ -1,5 +1,6 @@
 package com.example.learnkotlin.frontend.ui_elements
 
+import android.R.string
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.padding
@@ -15,7 +16,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 
 @Composable
-fun Checkbox(onCheckedChange: (Boolean) -> Unit) {
+fun Checkbox(onCheckedChange: (Boolean) -> Unit, text: String) {
     var checkedState by remember { mutableStateOf(false) }
     Column(modifier = Modifier.padding(16.dp)) {
         Row(verticalAlignment = Alignment.CenterVertically) {
@@ -26,7 +27,7 @@ fun Checkbox(onCheckedChange: (Boolean) -> Unit) {
                     onCheckedChange(it)
                 }
             )
-            Text(text = "Block App") // Example label
+            Text(text = text ) // Example label
         }
     }
 }

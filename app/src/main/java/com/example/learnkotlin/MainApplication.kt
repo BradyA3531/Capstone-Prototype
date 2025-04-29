@@ -12,10 +12,6 @@ class MainApplication :Application() {
 
     override fun onCreate(){
         super.onCreate()
-        appDatabase = Room.databaseBuilder(
-            applicationContext,
-            AppDatabase::class.java,
-            AppDatabase.Name
-        ).build()
+        appDatabase = AppDatabase.getDatabase(this)
     }
 }
